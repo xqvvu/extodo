@@ -1,24 +1,22 @@
 {
   "name": "extodo",
   "private": true,
+  "packageManager": "bun@1.2.21",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "lint": "turbo run lint"
+  },
+  "dependencies": {
+    "consola": "^3.4.2"
   },
   "devDependencies": {
-    "prettier": "^3.6.2",
+    "@antfu/eslint-config": "^5.2.1",
+    "eslint": "^9.34.0",
     "turbo": "^2.5.6",
     "typescript": "5.9.2"
   },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "bun@1.2.21",
   "workspaces": [
-    "apps/*",
     "packages/*"
   ]
 }
