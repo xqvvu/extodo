@@ -32,5 +32,8 @@
     "jsonc",
     "yaml",
     "toml"
-  ]
+  ],
+  "typescript.format.enable": false,
+  "javascript.format.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

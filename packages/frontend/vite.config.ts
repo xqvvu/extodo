@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
   const {
     API_PROXY_URL,
     PORT: __PORT__,
+    VITE_API_PREFIX = "/api",
   } = loadEnv(mode, import.meta.dirname, "");
 
   const PORT = Number(__PORT__);
@@ -34,7 +35,7 @@ export default defineConfig(({ mode }) => {
       port: Number.isInteger(PORT) ? PORT : 3333,
       proxy: API_PROXY_URL
         ? {
-            "/api": {
+            [VITE_API_PREFIX]: {
               target: API_PROXY_URL,
               changeOrigin: true,
             },

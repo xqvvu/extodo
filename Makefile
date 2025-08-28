@@ -1,8 +1,8 @@
 up:
-	docker compose -f=./server/compose.local.yml up -d
+	docker compose -f=./packages/server/compose.local.yml up -d
 
 down:
-	docker compose -f=./server/compose.local.yml down
+	docker compose -f=./packages/server/compose.local.yml down
 
 clean:
 	rm -rf ~/.container/extodo
