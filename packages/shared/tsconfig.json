@@ -25,11 +25,5 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false,
-
-    /* Path alias */
-    "baseUrl": "./",
-    "paths": {
-      "~/*": ["./*"]
-    }
   }
 }

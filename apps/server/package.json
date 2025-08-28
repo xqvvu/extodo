@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "@extodo/server",
   "type": "module",
   "private": true,
   "module": "index.ts",
@@ -8,12 +8,14 @@
     "test": "bun test"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "catalog:"
   },
   "dependencies": {
+    "@extodo/shared": "workspace:*",
+    "consola": "catalog:",
     "hono": "^4.9.4"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "catalog:"
   }
 }

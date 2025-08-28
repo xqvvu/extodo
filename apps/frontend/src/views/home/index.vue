@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { uuidv7 } from "@extodo/shared";
+import consola from "consola";
 
+consola.success(uuidv7());
 </script>
 
 <template>

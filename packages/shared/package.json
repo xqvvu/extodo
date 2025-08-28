@@ -1,12 +1,15 @@
 {
-  "name": "shared",
+  "name": "@extodo/shared",
   "type": "module",
   "private": true,
-  "module": "index.ts",
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "consola": "catalog:",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "catalog:"
   }
 }

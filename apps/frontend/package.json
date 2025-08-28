@@ -1,18 +1,21 @@
 {
-  "name": "frontend",
+  "name": "@extodo/frontend",
   "type": "module",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "dev": "bunx --bun vite",
+    "build": "vue-tsc -b && bunx --bun vite build",
     "lint": "eslint . --fix",
-    "preview": "vite preview"
+    "preview": "bunx --bun vite preview"
   },
   "dependencies": {
+    "@extodo/shared": "workspace:*",
     "@tanstack/vue-query": "^5.85.5",
     "@vueuse/core": "^13.8.0",
     "clsx": "^2.1.1",
+    "consola": "catalog:",
+    "pinia": "^3.0.3",
     "vue": "^3.5.18",
     "vue-draggable-plus": "^0.6.0",
     "vue-router": "4"
@@ -24,7 +27,6 @@
     "@vue/tsconfig": "^0.7.0",
     "unocss": "^66.4.2",
     "vite": "^7.1.2",
-    "vite-tsconfig-paths": "^5.1.4",
     "vue-tsc": "^3.0.5"
   }
 }
