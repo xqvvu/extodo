@@ -8,6 +8,7 @@ interface ViteTypeOptions {
 
 interface ImportMetaEnv {
   readonly VITE_API_PREFIX: string;
+  readonly VITE_DOMAIN: string;
   // more env variables...
 }
 

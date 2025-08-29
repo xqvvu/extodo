@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "@extodo/shared": "workspace:*",
+    "@types/qs": "catalog:",
     "consola": "catalog:",
-    "hono": "^4.9.4"
+    "hono": "^4.9.4",
+    "qs": "catalog:"
   },
   "devDependencies": {
     "@types/bun": "catalog:"
