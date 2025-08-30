@@ -8,6 +8,7 @@ const AUTH_WHITE_LIST: string[] = [
 
 export const useFetch = createFetch({
   baseUrl: import.meta.env.VITE_API_PREFIX || "/api",
+  combination: "chain",
   options: {
     async beforeFetch(ctx) {
       const authStore = useAuthStore();

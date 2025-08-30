@@ -14,4 +14,4 @@ build:
 	bun run build
 
 lint:
-	turbo run lint
+	bun run lint

@@ -9,7 +9,7 @@ export default antfu({
   vue: true,
   unocss: true,
   rules: {
-    "vue/max-attributes-per-line": ["error", { singleline: 3, multiline: 1 }],
+    // "vue/max-attributes-per-line": ["error", { singleline: 3, multiline: 1 }],
   },
   ignores: ["tsconfig.app.json", "tsconfig.json", "tsconfig.node.json"],
 });

@@ -2,6 +2,9 @@
   "name": "@extodo/shared",
   "type": "module",
   "private": true,
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
   "peerDependencies": {
     "typescript": "catalog:"
   },

@@ -1,5 +1,8 @@
-import { uuidv7 } from "@extodo/shared";
-import consola from "consola";
+import { Hono } from "hono";
 
-consola.success("Hi via Bun!");
-consola.success(uuidv7());
+const app = new Hono();
+
+Bun.serve({
+  fetch: app.fetch,
+  port: Bun.env.SERVER_PORT || 23002,
+});
