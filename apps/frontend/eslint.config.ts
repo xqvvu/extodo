@@ -1,5 +1,5 @@
 import antfu from "@antfu/eslint-config";
-import { base } from "@extodo/shared/configs";
+import { eslint } from "@extodo/shared/configs";
 
 export default antfu(
   {
@@ -9,5 +9,5 @@ export default antfu(
       "vue/max-attributes-per-line": ["error", { singleline: 3, multiline: 1 }],
     },
   },
-  base,
+  eslint,
 );

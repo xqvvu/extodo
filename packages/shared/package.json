@@ -4,6 +4,7 @@
   "private": true,
   "exports": {
     ".": "./index.ts",
+    "./lib": "./lib/index.ts",
     "./configs": "./configs/index.ts"
   },
   "scripts": {

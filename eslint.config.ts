@@ -1,3 +1,3 @@
-import { base } from "@extodo/shared/configs";
+import { eslint } from "@extodo/shared/configs";
 
-export default base;
+export default eslint;

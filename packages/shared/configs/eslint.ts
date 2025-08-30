@@ -1,6 +1,6 @@
 import antfu from "@antfu/eslint-config";
 
-export const base = antfu({
+export const eslint = antfu({
   stylistic: {
     jsx: false,
     semi: true,

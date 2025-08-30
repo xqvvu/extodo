@@ -1,3 +1,3 @@
-import { base } from "./configs/eslint";
+import { eslint } from "./configs/eslint";
 
-export default base;
+export default eslint;
